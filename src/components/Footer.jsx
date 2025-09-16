@@ -1,9 +1,8 @@
 import React from 'react';
-import { Heart, Code } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const Footer = ({isDarkMode , setIsDarkMode}) => {
+const Footer = () => {
   const container = {
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { staggerChildren: 0.12 } },

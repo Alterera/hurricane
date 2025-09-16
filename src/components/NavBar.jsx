@@ -74,12 +74,12 @@ const NavBar = () => {
       {/* Dark Mode + Hamburger */}
       <div className="flex items-center gap-3 cursor-pointer">
         {/* Contact Button */}
-        <Link href="#">
+        <a href="https://wa.me/917577060394" target="_blank" rel="noopener noreferrer">
           <button className="flex items-center gap-2 rounded-full transition-all duration-300 hover:scale-101 cursor-pointer">
             <BsWhatsapp className="w-5 h-5 text-green-400" />
             Let's Talk
           </button>
-        </Link>
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -102,7 +102,7 @@ const NavBar = () => {
                 key={item.to}
                 onClick={() => handleAnchorClick(item.to)}
                 className="px-3 py-1 rounded-2xl transition-all duration-300 
-        hover:bg-black hover:text-white"
+          hover:text-[#ff102a]"
               >
                 {item.label}
               </button>
@@ -111,7 +111,7 @@ const NavBar = () => {
                 key={item.to}
                 to={item.to}
                 className="px-3 py-1 rounded-2xl transition-all duration-300 
-        hover:bg-black hover:text-white"
+          hover:text-[#ff102a]"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

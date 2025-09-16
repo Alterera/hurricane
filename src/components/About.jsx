@@ -146,7 +146,7 @@ const About = ({ isDarkMode }) => {
                 <h3 className="text-xl font-semibold mb-2">
                   Passionate Learner
                 </h3>
-                <p className={isDarkMode ? "text-gray-300" : "text-gray-600"}>
+                <p className="text-gray-300">
                   Constantly exploring new technologies and frameworks to stay
                   ahead in the rapidly evolving tech landscape.
                 </p>

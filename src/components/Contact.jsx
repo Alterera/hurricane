@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { BsWhatsapp } from 'react-icons/bs';
 
 const Contact = ({ isDarkMode, setIsDarkMode }) => {
@@ -7,19 +7,19 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      detail: 'anuragaswal27@gmail.com',
-      link: 'mailto:anuragaswal27@gmail.com'
+      detail: 'hello@bidyutnath.com',
+      link: 'mailto:hello@bidyutnath.com'
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      detail: '+91 8264110182',
-      link: 'tel:+918264110182'
+      detail: '+91 7577-0603-94',
+      link: 'tel:+917577060394'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      detail: 'Punjab, Patiala, India',
+      detail: 'Nagaon, Assam, India',
       link: null
     }
   ];
@@ -27,21 +27,21 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
   const socialLinks = [
     {
       icon: <BsWhatsapp className="w-6 h-6" />,
-      name: 'GitHub',
-      url: 'https://github.com/ANURAG-SINGH17',
-      color: 'hover:text-white'
-    },
-    {
-      icon: <Linkedin className="w-6 h-6" />,
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/anurag-singh-200001315/',
-      color: 'hover:text-blue-400'
+      name: 'Whatsapp',
+      url: 'https://wa.me/917577060394',
+      color: 'hover:text-green-500'
     },
     {
       icon: <Instagram className="w-6 h-6" />,
       name: 'Instagram',
-      url: 'https://instagram.com/',
+      url: 'https://www.instagram.com/biiidyut1/',
       color: 'hover:text-pink-400'
+    },
+    {
+      icon: <Facebook className="w-6 h-6" />,
+      name: 'Instagram',
+      url: 'https://www.facebook.com/bidyut.nath.9883',
+      color: 'hover:text-blue-600'
     }
   ];
 

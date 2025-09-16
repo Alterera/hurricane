@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Facebook, Instagram } from "lucide-react";
 import { FiDownload } from "react-icons/fi";
 import HyperSpeed from "./reactbits/HyperSpeed";
 import RotatingText from "./reactbits/RotatingText";
 import { motion } from "framer-motion";
+import { BsWhatsapp } from "react-icons/bs";
 
 const HeroSection = ({ isDarkMode, setIsDarkMode }) => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -126,15 +127,15 @@ const HeroSection = ({ isDarkMode, setIsDarkMode }) => {
               <a
                 href="#contact"
                 className="flex items-center gap-2 px-6 py-2 rounded-full font-medium border transition-all duration-300
-                  bg-white text-black border-white hover:bg-gray-200 hover:scale-105"
+                  bg-white text-black border-white hover:bg-gray-200 hover:text-[#ff102a] hover:scale-105"
               >
                 contact me <ArrowRight size={18} />
               </a>
 
               {/* Resume Button */}
               <a
-                href="/upload/anurag-resume.pdf"
-                download="anurag-resume.pdf"
+                href="#"
+                download="bidyut-resume.pdf"
                 className="flex items-center gap-2 px-6 py-2 rounded-full font-medium border transition-all duration-300
                   border-white text-white hover:bg-white hover:text-black hover:scale-105"
               >
@@ -145,12 +146,12 @@ const HeroSection = ({ isDarkMode, setIsDarkMode }) => {
             {/* Social Icons */}
             <motion.div className="flex justify-center space-x-6 mt-5 animate-fade-in-up delay-700" variants={fadeUp}>
               {[
-                { href: "https://github.com/ANURAG-SINGH17", Icon: Github },
+                { href: "https://wa.me/917577060394", Icon: BsWhatsapp },
                 {
-                  href: "https://www.linkedin.com/in/anurag-singh-200001315/",
-                  Icon: Linkedin,
+                  href: "https://www.facebook.com/bidyut.nath.9883/",
+                  Icon: Facebook,
                 },
-                { href: "mailto:anuragaswal27@gmail.com", Icon: Mail },
+                { href: "https://www.instagram.com/biiidyut1/", Icon: Instagram },
               ].map(({ href, Icon }, idx) => (
                 <a
                   key={idx}
